@@ -1,2 +1,2 @@
-# NodeJS_Dev
+# Node.js_Dev
 node js 실습 및 정리
