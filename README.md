@@ -11,3 +11,8 @@ Part1_complete
 Part2_complete
 * Node.js 설치
 * Node.js 실행하기
+
+# 201125
+Part3_ing
+* 전역 변수 알아보기
+* console 객체, console 객체의 메소드 실습
