@@ -1,4 +1,4 @@
-// process 객체의 속성
+// process 객체의 속성 test
 
 console.log('-process.env: ' + process.env);
 console.log('-process.version: ' + process.version);
