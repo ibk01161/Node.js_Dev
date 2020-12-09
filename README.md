@@ -16,3 +16,7 @@ Part2_complete
 Part3_ing
 * 전역 변수 알아보기
 * console 객체, console 객체의 메소드 실습
+
+# 201209
+Part3_ing
+* process 객체의 속성과 메소드 실습
