@@ -20,3 +20,7 @@ Part3_ing
 # 201209
 Part3_ing
 * process 객체의 속성과 메소드 실습
+
+# 201212
+Part3_complete
+* exports 객체와 모듈 실습
