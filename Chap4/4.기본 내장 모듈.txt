@@ -31,8 +31,12 @@
 
 * format() 메소드는 3장에서의 console.log() 메소드와 비슷하지만, format()은 출력하지 않고 문자열을 반환하는 것
 
+4.5. crypto 모듈
+- 해시(암호화된 문자) 생성과 암호화를 수행하는 모듈
 
+* crypto 모듈을 사용해서 해시 생성 (05_01_module_crypto_create_hash.js 참고)    
 
+* crypto 모듈을 사용해 암호화 (05_02_module_crypto_encryption.js 참고)
 
 
 

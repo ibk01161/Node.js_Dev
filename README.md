@@ -28,3 +28,7 @@ Part3_complete
 # 201228
 Part4_ing
 * os, url, Query String, util 모듈 실습
+
+# 201229
+Part4_ing
+* crypto 모듈 실습
