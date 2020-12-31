@@ -1,0 +1,39 @@
+#5. 이벤트
+
+
+5.1. 이벤트 연결
+- 이벤트를 살펴보기 전 기존 자바스크립트에서 했던 이벤트 연결을 살펴보면
+ex) <script>
+	// window 객체에 load 이벤트를 연결
+	window.addEventListener('load', function() {
+ });
+</script>
+
+- 이때 load를 이벤트 이름 또는 이벤트 타입이라고 함
+- 또한 매개변수로 입력한 함수를 이벤트 리스너 또는 이벤트 핸들러라고 함
+- Node.js에서도 비슷한 방법 사용
+- 자바스크립트의 addEventListener() 메소드보다 이름이 간단한 on() 메소드를 제공
+- on() 메소드를 사용해 process 객체에 uncaughtException 이벤트를 연결할 수 있음
+
+* uncaughtException 이벤트
+- 예외가 발생할 때 실행되는 이벤트
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
