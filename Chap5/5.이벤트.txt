@@ -35,7 +35,30 @@ ex) <script>
 - 03_02_Event_remove.js를 실행하면 2초 후 예외가 발생하고 uncaughtException 이벤트 리스너가 실행됨
 - 처음에는 '예외 발생'이 출력하고 넘어가지만 두 번재 예외가 발생하면 프로그램이 종료됨 (removeListener)
 
+5.4. 이벤트 강제 발생 (04_01_Event_connect.js, 04_02_Event_emit.js)
 
+* 이벤트 강제 발생 메소드
+- emit() : 이벤트 실행
+
+- 04_02_Event_emit.js 에서 exit 이벤트를 강제로 호출해도 프로그램이 종료되지 않음, emit() 메소드를 사용해 이벤트를 강제로 호출하면 이벤트 리스너만 실행됨
+- 프로그램을 종료할 때에는 process 객체의 exit() 메소드를 사용 (04_03_Event_exit.js 참고)
+
+
+5.5. 이벤트 생성
+- Node.js 에서 이벤트를 연결할 수 있는 모든 객체는 EventEmitter 객체의 상속을 받음 (process 객체도 EventEmitter 객체의 상속을 받기 때문에 이벤트를 연결할 수 있음)
+- EventEmitter 객체는 events 모듈 안에 있는 생성자 함수로 생성할 수 있는 객체
+
+* EventEmitter 객체의 메소드
+- addListener() : 이벤트 연결
+- on() : 이벤트 연결
+- setMaxListeners() : 이벤트 연결 개수 조절
+- removeListener() : 특정 이벤트의 이벤트 리스너를 제거
+- removeAllListeners() : 모든 이벤트 리스너를 제거
+- once() : 이벤트를 한 번만 연결
+
+- 일반적으로 이벤트를 생성하는 부분과 연결하는 부분을 모듈로 분리해 사용
+- 예제로 app.js (프로그램 본체), rint.js (이벤트 생성할 모듈 파일) 생성
+- app.js 파일을 실행하면 rint.js 파일에서 setInterval() 함수를 실행해 이벤트를 강제 발생시키므로 app.js 파일에서 연결한 이벤트 리스너를 실행하는 것
 
 
 
