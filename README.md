@@ -52,3 +52,7 @@ Part5_complete
 # 210105
 Part6_ing
 * 요청과 응답의 개념 이해, server 객체의 메소드 및 이벤트 실습
+
+# 210107
+Part6_ing
+* response 객체와 File System 모듈로 HTML, 이미지, 음악 파일 제공 서버 구현

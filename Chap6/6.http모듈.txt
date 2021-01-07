@@ -46,7 +46,38 @@
 * createServer() 메소드의 매개변수
 - server 객체의 이벤트 중 request 이벤트 리스너는 별도로 on() 메소드를 사용해 지정할 필요 없이 createServer() 메소드의 매개변수로 입력할 수 있음
 
+6.3. response 객체
+- http://127.0.0.1:52273에 접속하면 아무것도 뜨지 않는 이유는 웹 브라우저가 요청 메세지를 전달했지만 웹 서버가 응답 메시지를 전달하지 않았으므로 웹 브라우저는 응답을 기다리는 상태가 됨
+- 클라이언트에 웹 페이지를 제공하려면 응답 메세지를 작성해야 함
+- request 이벤트 리스너의 두 번째 매개변수로 전달되는 response 객체를 사용
 
+* response 객체의 메소드
+- writeHead() : 응답 헤더 작성
+- end() : 응답 본문 작성
+
+=> writeHead() 메소드와 end() 메소드를 사용해 응답 메세지를 작성하고 클라이언트에 제공
+
+6.3.1. File System 모듈을 사용한 HTML 페이지 제공 (03_01_http_server.js)
+- 자바스크립트 파일 위에서 모든 HTML 페이지를 문자열로 작성하는 것은 불가능하기 때문에 File System 모듈을 사용해 서버에 존재하는 HTML 페이지를 클라이언트에 제공
+- 우선 HTML 페이지를 클라이언트에 제공하려면 서버가 필요함 (03_01_http_server.js)
+- File System 모듈을 사용해 사용자에게 HTMLPage.html 파일을 제공할 것이므로 File System 모듈 추출 (03_02_http_html.js)
+- 코드를 실행하고 http://127.0.0.1:52273에 접속하면 HTML 페이지를 볼 수 있음
+
+6.3.2. 이미지와 음악 파일 제공 (04_01_http_server.js)
+- 웹에서는 이미지나 음악파일, 동영상 파일도 다운로드할 수 있음
+- 포트 2개를 사용해 서버를 2개 생성 후, 52273 포트에는 이미지 파일, 52274 포트는 음악 파일을 제공
+- 특정 형식 파일을 제공할 때 가장 중요한 것은 응답 헤더의 Content-Type 속성
+- Content-Type 속성은 MIME 형식을 입력 (text/html : html파일, image/jpeg : 이미지 파일, audio/mp3 : 음악 파일)
+
+* MIM 형식의 예
+- text/plain : 기본적인 텍스트
+- text/html : HTML 문서
+- text/css : CSS 문서
+- text/xml : XML 문서
+- image/jpeg : JPG/JPEG 그림 파일
+- image/png : PNG 그림 파일
+- video/mpeg : MPEG 비디오 파일
+- audio/mp3 : MP3 음악 파일
 
 
 
