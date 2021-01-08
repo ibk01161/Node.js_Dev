@@ -55,4 +55,8 @@ Part6_ing
 
 # 210107
 Part6_ing
-* response 객체와 File System 모듈로 HTML, 이미지, 음악 파일 제공 서버 구현
+* response 객체 - File System 모듈로 HTML, 이미지, 음악 파일 제공 서버 구현
+
+# 210108
+Part6_ing
+* response 객체 - 쿠키 생성, 페이지 강제 이동 실습

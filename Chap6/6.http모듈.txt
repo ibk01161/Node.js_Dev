@@ -79,7 +79,36 @@
 - video/mpeg : MPEG 비디오 파일
 - audio/mp3 : MP3 음악 파일
 
+6.3.3. 쿠키 생성
+- 쿠키는 키와 값이 들어 있는 작은 데이터 조각으로 이름, 값, 파기 날짜와 경로 정보가 있음
+- 쿠키는 서버와 클라이언트에서 모두 저장하고 사용할 수 있으며, 일정 기간 동안 데이터를 저장할 수 있으므로 로그인 상태를 일정 시간 동안 유지해야 하는 페이스북과 같은 웹 사이트에 사용
+- response 객체를 사용하면 클라이언트에 쿠키를 할당할 수 있음, 이때 응답 헤더의 Set-Cookie 속성 사용
 
+* Set-Cookie의 속성
+- Name = Value;
+- Expires = 날짜;
+- Domain = 도메인;
+- Path = 경로;
+- Secure
+
+- 05_02_http_cookie_create.js 처럼 writeHead() 메소드의 옵션 객체에 Set-Cookie 속성 값을 입력
+- 만약 쿠키에 Expires 속성과 같은 별도의 속성을 추가하고 싶다면 05_03_http_cookie_end.js 처럼 Set-Cookie 속성 값을 입력
+- 처음 요청할 때는 클라이언트가 쿠키를 갖고 있지 않으므로 쿠키가 출력되지 않고, 두 번째 요청부터는 클라이언트가 쿠키를 갖고 있으므로 생성한 쿠키를 출력
+
+6.3.4. 페이지 강제 이동
+- 웹 페이지에 접속했을 때 서버에서 강제로 다른 웹 페이지로 이동시키는 경우가 있음 (ex : 포털 사이트에서 로그인을 하면 잠시 흰 화면이 나타났다가 메인 화면으로 이동할 때)
+- 웹 페이지를 강제로 이동시킬 때는 응답 헤더의 Location 속성을 사용, Location 속성에 이동하고자 하는 웹 페이지 주소를 입력하기만 하면 됨
+- 06_01_http_location.js의 writeHead() 메소드의 첫 번째 매개변수를 Status Code라고 부름
+- '302'는 강제 페이지 이동을 구현할 때 많이 사용되는 코드 번호
+
+* HTTP Status Code 예
+- 1XX : 처리 중 - 100 Continue
+- 2XX : 성공 - 200 OK
+- 3XX : 리다이렉트 - 300 Multiple Choices
+- 4XX : 클라이언트 오류 -400 Bad Request
+- 5XX : 서버 오류 - 500 Internal Server Error
+
+- Status Code를 404로 설정하면 웹 브라우저에서 오류 메세지를 나타냄
 
 
 
