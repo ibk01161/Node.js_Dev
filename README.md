@@ -60,3 +60,7 @@ Part6_ing
 # 210108
 Part6_ing
 * response 객체 - 쿠키 생성, 페이지 강제 이동 실습
+
+# 210109
+Part6_ing
+* request 객체 - url 속성, method 속성 실습
