@@ -64,3 +64,7 @@ Part6_ing
 # 210109
 Part6_ing
 * request 객체 - url 속성, method 속성 실습
+
+# 210110
+Part6_ing
+* request 객체 - get, post 요청 실습
