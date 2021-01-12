@@ -68,3 +68,7 @@ Part6_ing
 # 210110
 Part6_ing
 * request 객체 - get, post 요청 실습
+
+# 210112
+Part6_complete
+* request 객체 -  쿠키 추출
