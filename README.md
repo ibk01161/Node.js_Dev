@@ -72,3 +72,7 @@ Part6_ing
 # 210112
 Part6_complete
 * request 객체 -  쿠키 추출
+
+# 210130
+Part7_ing
+* 외부 모듈 - ejs 모듈 실습
