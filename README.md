@@ -76,3 +76,7 @@ Part6_complete
 # 210130
 Part7_ing
 * 외부 모듈 - ejs 모듈 실습
+
+# 210131
+Part7_ing
+* 외부 모듈 - jade 모듈 실습
