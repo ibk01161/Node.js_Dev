@@ -79,6 +79,7 @@ Part7_ing
 
 # 210131
 Part7_ing
+<<<<<<< HEAD
 * 외부 모듈 - jade 모듈 실습
 
 # 210202
