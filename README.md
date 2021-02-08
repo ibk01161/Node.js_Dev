@@ -79,9 +79,12 @@ Part7_ing
 
 # 210131
 Part7_ing
-<<<<<<< HEAD
 * 외부 모듈 - jade 모듈 실습
 
 # 210202
 Part7_ing
 * 외부 모듈 - supervisor, forever 모듈 실습
+
+# 210208
+Part7_complete
+* 기본적인 npm 명령어와 save 옵션

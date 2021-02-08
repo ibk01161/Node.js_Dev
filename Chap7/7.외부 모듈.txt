@@ -90,4 +90,24 @@
 - forever list : 웹 서버 확인 명령어
 - forever stop 0 : 프로세스의 번호로 서버 종료
 
+7.4. 기본적인 npm 명령어와 save 옵션
 
+7.4.1. npm init
+- 프로젝트 생성 시 npm init 명령어 사용
+- 프로젝트의 이름, 버전, 설명, 엔트리 포인트 등을 요구하지만 기본 값 입력
+- 명령 실행 후 package.json 파일이 생성되어 있음
+- 이러한 속성들은 이후에 npm을 통해 프로그램을 배포할 때 활용
+
+ * package.json 파일의 기본적인 속성
+- name : 이름
+- version : 버전
+- description : 설명
+- main : 프로젝트의 메인 파일
+- author : 작성자
+- licence : 라이선스
+
+7.4.2. 모듈 버전 선택과 저장
+- 모듈 버전을 선택해 설치하고 싶을 때는 @ 기호를 사용
+- npm install ejs@2.4.1 : 2.4.1버전을 설치
+- npm init 명령으로 package.json 파일을 만들었다면, 이러한 npm install 명령을 입력할 때 다음처럼 --save 옵션을 사용할 수 있음
+- --save 옵션을 사용하면 내가 프로그램을 만들 때 어떤 버전을 사용했는지 명시 가능
